@@ -12,3 +12,6 @@
 
 # to deploy: 
 `sudo gunicorn3 -w 2 -b 0.0.0.0:80 app:app`  
+# -w = workers, set to 2 
+# -b = base URL, set to 0.0.0.0 so it will go to whatever the IP is
+# - app:app, means that our pythong file is called app (first app), and the second (:app) is default 
